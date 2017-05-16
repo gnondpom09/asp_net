@@ -1,0 +1,179 @@
+﻿@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "Laurent Botella - Artiste peintre";
+
+}
+<div id="section1" class="container">
+	@section Header {
+	    <header>
+            <div id="logo" class="small-3">
+                <img src="~/Content/images/siganture.png" alt="logo">
+            </div>
+            <nav class="menu-opener">
+                <div class="menu-opener-inner"></div>
+            </nav>
+            <nav class="menu">
+                <ul class="menu-inner">
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+	}
+        <section class="cadre row expanded">
+            <div id="home" class="medium-8 columns">
+                <h1>Laurent <span>Botella</span></h1>
+                <h2>Artiste Peintre</h2>
+                <div class="pastelliste">
+                    <img src="~/Content/images/pastelliste.png" alt="">
+                </div>
+            </div>
+            <div class="medium-4 columns diaporama">
+                <img src="~/Content/images/steph2.jpg" alt="painting">
+            </div>
+        </section>
+        <a href="#section3" class="top">
+            <button type="button" name="top">
+                <div class="content-button">
+                    <p>Scroll</p><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+            </button>
+        </a>
+    </div>
+<div id="section2" class="under">
+    <section class="row align-strech expanded">
+        <h2>Actualités</h2>
+        <div class="small-4 columns">
+            <div class="actu">
+                <h4>Salon de Leguevin</h4>
+                <h5>Du 12 au 25 Mai</h5>
+                <p>Invité d'honneur - Halle Piquot Leguevin</p>
+            </div>
+            <a href="#" class="voir">
+                <button type="button" name="top">
+                    <div class="content-button">
+                        <p>Voir</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="small-4 columns">
+            <div class="actu">
+                <h4>Salon de Leguevin</h4>
+                <h5>Du 12 au 25 Mai</h5>
+                <p>Invité d'honneur - Halle Piquot Leguevin</p>
+            </div>
+            <a href="#" class="voir">
+                <button type="button" name="top">
+                    <div class="content-button">
+                        <p>Voir</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="small-4 columns">
+            <div class="actu">
+                <h4>Salon de Leguevin</h4>
+                <h5>Du 12 au 25 Mai</h5>
+                <p>Invité d'honneur - Halle Piquot Leguevin</p>
+            </div>
+            <a href="#" class="voir">
+                <button type="button" name="top">
+                    <div class="content-button">
+                        <p>Voir</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+    </section>
+</div>
+<div id="section3" class="video">
+    <video src="videofile.ogg" autoplay poster="~/Content/images/video_02.jpg" width="100%">
+    </video>
+    <div class="video-titre">
+        <h2>Decouvrez l'atelier</h2>
+        <a href="#">
+            <img src="~/Content/images/play.png" alt="">
+        </a>
+    </div>
+</div>
+<div id="section4" class="container">
+    <section class="cadre row expanded">
+        <h2>Galerie</h2>
+        <div class="medium-4 columns">
+            <h3>Découvrez les nouveautés</h3>
+            <p>Postrait, nus, figures à travers différentes techniques : Huile, pastel, sanguine...</p>
+        </div>
+        <div class="medium-8 columns">
+            <img src="~/Content/images/porte_03.jpg" alt="">
+        </div>
+    </section>
+    <a href="#section1" class="top bottom">
+        <button type="button" name="bottom">
+            <div class="content-button">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                <p>Top</p>
+            </div>
+        </button>
+    </a>
+</div>
+@section Footer {
+<footer id="section5" class="under">
+    <div class="row align-strech expanded part1">
+        <div class="small-4 columns">
+            <h3>Newsletter</h3>
+            <p>Restez informés de toutes les expositions.</p>
+            <form action="">
+                <div class="input-group">
+                    <input class="input-group-field" type="email" placeholder="Saisissez votre Email">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="OK">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="small-4 columns">
+            <h3>Réseaux sociaux</h3>
+        </div>
+        <div class="small-4 columns">
+            <h3>Galerie</h3>
+            <ul>
+                <a href="#"><li>Extérieur</li></a>
+                <a href="#"><li>Intérieur</li></a>
+                <a href="#"><li>Nus</li></a>
+                <a href="#"><li>Portraits</li></a>
+            </ul>
+        </div>
+        <div class="credit">
+            <hr>
+            <p>Crédit : <a href="#">Laurent Botella</a> - Copyright © 2017 | <a href="#">Mentions légales</a></p>
+            <p>Ressources : <a href="http://PixelBuddha.net" target="new">PixelBuddha.net</a></p>
+        </div>
+    </div>
+</footer>
+}

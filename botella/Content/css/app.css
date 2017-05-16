@@ -1,0 +1,405 @@
+﻿/**
+* Description : portfolio artiste peintre
+* Author : Laurent Botella
+*/
+html {
+    background-color: #1a1a1a;
+}
+
+body {
+    background-color: #efeeee;
+    color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 200;
+}
+
+.top, .voir {
+    display: block;
+    background-color: #313030;
+    border: 1px solid #aaa8a8;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 500;
+    top: -25px;
+}
+
+.content-button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #c4c4c4;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 4px;
+    left: 19px;
+}
+
+    .content-button i {
+        position: relative;
+        top: -15px;
+    }
+
+.bottom .content-button {
+    top: 2px;
+    left: 14px;
+}
+
+    .bottom .content-button i {
+        top: 2px;
+    }
+/********************* NAVIGATION *************************/
+.menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
+    -webkit-transition: 250ms all;
+    transition: 250ms all;
+}
+
+.menu-opener {
+    cursor: pointer;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0.4%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 55px;
+    z-index:800;
+}
+
+.menu-opener-inner {
+    background: #313030;
+    height: .3rem;
+    margin-left: .75rem;
+    margin-top: 1.75rem;
+    width: 2.3rem;
+}
+
+    .menu-opener-inner::before, .menu-opener-inner::after {
+        background: #313030;
+        content: '';
+        display: block;
+        margin-top: 0.2em;
+        height: .3rem;
+        width: 2.3rem;
+    }
+
+    .menu-opener-inner::before {
+        -webkit-transform: translateY(-0.75rem);
+        -ms-transform: translateY(-0.75rem);
+        transform: translateY(-0.75rem);
+    }
+
+    .menu-opener-inner::after {
+        -webkit-transform: translateY(0.25rem);
+        -ms-transform: translateY(0.25rem);
+        transform: translateY(0.25rem);
+    }
+
+    .menu-opener-inner.active {
+        background: transparent;
+    }
+
+        .menu-opener-inner.active::before {
+            -webkit-transform: translateY(0rem) rotate(-45deg);
+            -ms-transform: translateY(0rem) rotate(-45deg);
+            transform: translateY(0rem) rotate(-45deg);
+        }
+
+        .menu-opener-inner.active::after {
+            -webkit-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+            -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+            transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+        }
+
+.menu {
+    color: transparent;
+    height: 0px;
+    position: absolute;
+    top: 2%;
+    right: 8.5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 0rem;
+    z-index: 500;
+}
+    /* depliant vertical */
+    .menu.active {
+        height: -webkit-calc(88% - 2rem);
+        height: calc(88% - 2rem);
+    }
+
+        .menu.active .menu-link {
+            color: #313030;
+        }
+
+.menu-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 88%;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 4rem;
+    padding: 0;
+}
+.menu-link:first-child {
+    padding-top: 10%;
+}
+
+.menu-link {
+    color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: transparent;
+}
+
+.menu-link li {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: auto;
+    }
+
+    .menu-inner {
+        display: block;
+    }
+
+    .menu-link {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .menu.active {
+        width: -webkit-calc(95% - 0.5rem);
+        width: calc(95% - 0.5rem);
+    }
+}
+/********************* HOME *******************************/
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+h3 {
+    color: #83adde;
+}
+
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+h5 {
+    color: #83adde;
+    font-weight: 600;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#home {
+    margin-top: 7%;
+    transform: translateY(7%);
+}
+
+    #home h1 {
+        font-size: 2.4em;
+    }
+
+        #home h1 span {
+            text-transform: uppercase;
+        }
+
+    #home h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.7em;
+        margin-left: 0.7em;
+        margin-bottom: 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    #home .pastelliste img {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+.diaporama {
+    text-align: right;
+}
+/********************* CONTENT ****************************/
+.cadre {
+    background-color: #fff;
+    border: solid 1px #aaa8a8;
+    overflow: hidden;
+    padding: 4%;
+}
+
+#section2 {
+    position: absolute;
+    top: 35em;
+}
+
+#section3 {
+    position: absolute;
+    top: 70em;
+}
+
+#section4 {
+    position: absolute;
+    top: 105em;
+    z-index: 800;
+    left: 5%;
+}
+
+#section5 {
+    position: absolute;
+    top: 155em;
+}
+
+.under {
+    background-color: #1a1a1a;
+    padding: 3% 5%;
+    width: 100%;
+    z-index: 100;
+    padding-bottom: 100px;
+}
+
+    .under section {
+        position: relative;
+        top: 100px;
+    }
+
+    .under h2 {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+.actu {
+    background-color: #fff;
+    margin: 1%;
+    padding: 4% 2% 18% 2%;
+    text-align: center;
+}
+
+.voir {
+    top: -28px;
+}
+
+    .voir .content-button {
+        top: 11px;
+        left: 14px;
+    }
+
+.video-titre {
+    z-index: 600;
+    position: relative;
+    top: -700px;
+    text-align: center;
+}
+
+    .video-titre h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.2em;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .video-titre img {
+        padding-top: 60px;
+        width: 10%;
+    }
+/********************* BIOGRAPHY **************************/
+/********************* GALERIE ****************************/
+/********************* VIDEOS *****************************/
+/********************* EXPOSITIONS ************************/
+/********************* FORM *******************************/
+/********************* FOOTER *****************************/
+footer {
+    background-color: #1a1a1a;
+    color: #efeeee;
+}
+
+    footer a {
+        color: #b2c8e1;
+    }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+    footer input[type=email] {
+        background-color: #313030;
+        border: none;
+        color: #fff;
+    }
+
+        footer input[type=email]:focus {
+            background-color: #313030;
+        }
+
+    footer input[type=submit] {
+        background-color: #313030;
+        border-left: solid 1px #616060;
+    }
+
+    footer ul {
+        margin-left: 0;
+    }
+
+        footer ul li {
+            border-bottom: solid 1px #616060;
+            list-style: none;
+            padding: 1.5% 0;
+        }
+
+.credit {
+    margin-top: 260px;
+}
+
+    .credit hr {
+        border: 0.5px solid #616060;
+    }
+
+@media print, screen and (min-width: 40em) {
+    .newsletter-subscribe {
+        padding: 0 3rem;
+    }
+}

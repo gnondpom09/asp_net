@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<title>@ViewBag.title</title>	
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurent Botella - Artiste peintre</title>
+	<!-- style foundation -->	
+    <link rel="stylesheet" href="~/Content/css/foundation.css" />
+    <link rel="stylesheet" href="~/Content/css/motion-ui.css" />
+    <link rel="stylesheet" href="~/COntent/css/style.css" />
+	<!-- style application -->	
+    <link rel="stylesheet" href="~/Content/css/app.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,800" rel="stylesheet">
+</head>
+<body>
+	@RenderSection("Header")
+		
+	@RenderBody()
+    
+	@RenderSection("Footer")	
+
+	<script src="~/Content/js/vendor/jquery.js"></script>
+	<script src="~/Content/js/vendor/modernizr.js"></script>
+	<script src="~/Content/js/foundation.min.js"></script>
+	<script src="~/Content/js/script.js"></script>
+	<script src="~/Content/js/vendor/motion-ui.js"></script>
+	<script src="~/Content/js/vendor/what-input.js"></script>
+	<script src="~/Content/js/vendor/foundation.js"></script>
+	<script src="~/Content/js/app.js"></script>
+		
+</body>
+</html>
