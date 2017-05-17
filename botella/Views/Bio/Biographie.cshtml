@@ -1,0 +1,90 @@
+﻿﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "Biographie";
+}
+
+<div id="section1" class="container">
+    @section Header {
+        <header>
+            <div id="logo" class="small-3">
+                <a href="@Url.Action("Index", "Home")">
+                    <img src="~/Content/images/siganture.png" alt="logo">
+                </a>  
+            </div>
+            <nav class="menu-opener">
+                <div class="menu-opener-inner"></div>
+            </nav>
+            <nav class="menu">
+                <ul class="menu-inner">
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    }
+        <section class="cadre row expanded">
+           <h2>Biographie</h2>
+        </section>
+
+
+@section Footer {
+<footer id="section5" class="under">
+    <div class="row align-strech expanded part1">
+        <div class="small-4 columns">
+            <h3>Newsletter</h3>
+            <p>Restez informés de toutes les expositions.</p>
+            <form action="">
+                <div class="input-group">
+                    <input class="input-group-field" type="email" placeholder="Saisissez votre Email">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="OK">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="small-4 columns">
+            <h3>Réseaux sociaux</h3>
+        </div>
+        <div class="small-4 columns">
+            <h3>Galerie</h3>
+            <ul>
+                <a href="#"><li>Extérieur</li></a>
+                <a href="#"><li>Intérieur</li></a>
+                <a href="#"><li>Nus</li></a>
+                <a href="#"><li>Portraits</li></a>
+            </ul>
+        </div>
+        <div class="credit">
+            <hr>
+            <p>Crédit : <a href="#">Laurent Botella</a> - Copyright © 2017 | <a href="#">Mentions légales</a></p>
+            <p>Ressources : <a href="http://PixelBuddha.net" target="new">PixelBuddha.net</a></p>
+        </div>
+    </div>
+</footer>
+}
+
+

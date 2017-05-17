@@ -124,7 +124,7 @@ body {
     height: 0px;
     position: absolute;
     top: 2%;
-    right: 8.5%;
+    right: 8.4%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -178,9 +178,15 @@ body {
     text-align: center;
     text-decoration: none;
 }
-
+.menu-link a {
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    z-index: 900;
+}
 .menu a:hover {
     color: transparent;
+    cursor: pointer;
 }
 
 .menu-link li {

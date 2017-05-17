@@ -9,18 +9,21 @@
 	@section Header {
 	    <header>
             <div id="logo" class="small-3">
-                <img src="~/Content/images/siganture.png" alt="logo">
+			    <a href="@Url.Action("Index", "Home")">
+				    <img src="~/Content/images/siganture.png" alt="logo">
+			    </a>  
             </div>
             <nav class="menu-opener">
                 <div class="menu-opener-inner"></div>
             </nav>
             <nav class="menu">
                 <ul class="menu-inner">
-                    <a href="#" class="menu-link">
-                        <li>
+				
+                        <li class="menu-link">
+						    @Html.ActionLink(" ", "Biographie", "Bio")
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </li>
-                    </a>
+              
                     <a href="#" class="menu-link">
                         <li>
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
