@@ -2,6 +2,10 @@
 * Description : portfolio artiste peintre
 * Author : Laurent Botella
 */
+@font-face {
+    font-family: "Brownhill";
+    src: url("../fonts/brownhill.otf");
+}
 html {
     background-color: #1a1a1a;
 }
